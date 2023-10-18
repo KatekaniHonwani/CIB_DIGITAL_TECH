@@ -1,10 +1,10 @@
-using LibertyAutomation.Utilities;
+using ABSAAutomation.Utilities;
 using NUnit.Framework;
 using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Infrastructure;
 
-namespace LibertyAutomation.API.StepDefinitions
+namespace ABSAAutomation.API.StepDefinitions
 {
     [Binding]
     public class SchemeStepDefinitions

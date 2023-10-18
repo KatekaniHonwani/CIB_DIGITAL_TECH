@@ -1,13 +1,13 @@
 ﻿using System;
 using AventStack.ExtentReports;
-using LibertyAutomation.Hooks;
-using LibertyAutomation.Utilities;
-using LibertyAutomation.Web.ObjectRepo;
+using ABSAAutomation.Hooks;
+using ABSAAutomation.Utilities;
+using ABSAAutomation.Web.ObjectRepo;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace LibertyAutomation.LibertyAutomation.PageObjects
+namespace ABSAAutomation.ABSAAutomation.PageObjects
 {
      class LogIn : ActionHelper
     {

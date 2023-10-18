@@ -2,7 +2,7 @@
 using System.Data;
 using TechTalk.SpecFlow;
 
-namespace LibertyAutomation.Support.Utilities
+namespace ABSAAutomation.Support.Utilities
 {
     class DataTableHelper
     {

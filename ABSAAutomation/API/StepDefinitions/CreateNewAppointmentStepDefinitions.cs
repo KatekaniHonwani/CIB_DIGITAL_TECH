@@ -1,12 +1,12 @@
 using System;
-using LibertyAutomation.HealthOneAPI.AppSpecific;
-using LibertyAutomation.Hooks;
-using LibertyAutomation.Utilities;
+using ABSAAutomation.HealthOneAPI.AppSpecific;
+using ABSAAutomation.Hooks;
+using ABSAAutomation.Utilities;
 using AventStack.ExtentReports.Gherkin.Model;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
-namespace LibertyAutomation.HealthOneAPI.StepDefinitions
+namespace ABSAAutomation.HealthOneAPI.StepDefinitions
 {
     [Binding]
     public class CreateNewAppointmentStepDefinitions

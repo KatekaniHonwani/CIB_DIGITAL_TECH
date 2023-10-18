@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace LibertyAutomation.Web.ObjectRepo
+namespace ABSAAutomation.Web.ObjectRepo
 {
     public class LogoutDialogBoxPopUpRepo
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LibertyAutomation {
+namespace ABSAAutomation {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace LibertyAutomation {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LibertyAutomation.privateSettings", typeof(privateSettings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ABSAAutomation.privateSettings", typeof(privateSettings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

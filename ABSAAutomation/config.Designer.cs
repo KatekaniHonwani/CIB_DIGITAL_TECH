@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LibertyAutomation {
+namespace ABSAAutomation {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace LibertyAutomation {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LibertyAutomation.config", typeof(config).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ABSAAutomation.config", typeof(config).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -158,9 +158,9 @@ namespace LibertyAutomation {
                 return ResourceManager.GetString("TakeScreenshots", resourceCulture);
             }
         }
-        
+
         /// <summary>
-        ///   Looks up a localized string similar to https://healthone-uat.LibertyAutomation.com/.
+        ///   Looks up a localized string similar to https://healthone-uat.ABSAAutomation.com/.
         /// </summary>
         internal static string URL {
             get {

@@ -1,11 +1,11 @@
-using LibertyAutomation.LibertyAutomation.PageObjects;
-using LibertyAutomation.Utilities;
+using ABSAAutomation.ABSAAutomation.PageObjects;
+using ABSAAutomation.Utilities;
 using Google.Apis.Sheets.v4.Data;
 using System;
 using TechTalk.SpecFlow;
 using static MongoDB.Driver.WriteConcern;
 
-namespace LibertyAutomation.LibertyAutomation.StepDefinitions
+namespace ABSAAutomation.ABSAAutomation.StepDefinitions
 {
     [Binding]
     public class RequestToResetPasswordStepDefinitions

@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading;
-using LibertyAutomation.LibertyAutomation.PageObjects;
-using LibertyAutomation.Web.PageObjects;
+using ABSAAutomation.ABSAAutomation.PageObjects;
+using ABSAAutomation.Web.PageObjects;
 using OpenQA.Selenium.Support.UI;
 using TechTalk.SpecFlow;
 
-namespace LibertyAutomation.Web.StepDefinitions
+namespace ABSAAutomation.Web.StepDefinitions
 {
     [Binding]
     public class LogOutStepDefinitions

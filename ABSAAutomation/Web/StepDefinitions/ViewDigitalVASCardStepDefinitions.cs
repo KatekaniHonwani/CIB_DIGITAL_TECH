@@ -1,13 +1,13 @@
-using LibertyAutomation.LibertyAutomation.PageObjects;
-using LibertyAutomation.Web.PageObjects;
+using ABSAAutomation.ABSAAutomation.PageObjects;
+using ABSAAutomation.Web.PageObjects;
 using TechTalk.SpecFlow;
 using System;
 using TechTalk.SpecFlow.Assist;
-using LibertyAutomation.Support.Utilities;
+using ABSAAutomation.Support.Utilities;
 using System.Collections.Generic;
 using System.Data;
 
-namespace LibertyAutomation.Web.StepDefinitions
+namespace ABSAAutomation.Web.StepDefinitions
 {
     [Binding]
     public class ViewDigitalVASCardStepDefinitions

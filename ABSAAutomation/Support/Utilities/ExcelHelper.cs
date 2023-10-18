@@ -1,4 +1,4 @@
-﻿using LibertyAutomation.Hooks;
+﻿using ABSAAutomation.Hooks;
 using GoogleSheetsHelper;
 
 using Microsoft.Graph;
@@ -21,7 +21,7 @@ using System.Linq;
 
 using System.Threading.Tasks;
 
-namespace LibertyAutomation.Utilities
+namespace ABSAAutomation.Utilities
 
 {
 

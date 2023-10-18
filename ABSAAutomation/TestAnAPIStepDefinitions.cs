@@ -1,4 +1,4 @@
-using LibertyAutomation.Utilities;
+using ABSAAutomation.Utilities;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Infrastructure;
 
-namespace LibertyAutomation
+namespace ABSAAutomation
 {
     [Binding]
     public class TestAnAPIStepDefinitions

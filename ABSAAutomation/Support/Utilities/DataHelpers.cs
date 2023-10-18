@@ -14,12 +14,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechTalk.SpecFlow;
-using LibertyAutomation.Hooks;
+using ABSAAutomation.Hooks;
 using MongoDB.Driver.Core.Configuration;
 using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
 
-namespace LibertyAutomation.Utilities
+namespace ABSAAutomation.Utilities
 {
     class DataHelpers
     {

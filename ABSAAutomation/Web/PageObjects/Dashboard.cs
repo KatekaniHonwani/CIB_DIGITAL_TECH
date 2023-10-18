@@ -1,6 +1,6 @@
-﻿using LibertyAutomation.Hooks;
-using LibertyAutomation.Utilities;
-using LibertyAutomation.Web.ObjectRepo;
+﻿using ABSAAutomation.Hooks;
+using ABSAAutomation.Utilities;
+using ABSAAutomation.Web.ObjectRepo;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System.Collections.Generic;
@@ -9,7 +9,7 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using SeleniumExtras.WaitHelpers;
 
-namespace LibertyAutomation.Web.PageObjects
+namespace ABSAAutomation.Web.PageObjects
 {
     class Dashboard : ActionHelper
     {

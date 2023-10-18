@@ -12,7 +12,7 @@ using OpenQA.Selenium.Support.UI;
 using System.Xml;
 using System.IO;
 using System.Xml.Linq;
-using LibertyAutomation.Utilities;
+using ABSAAutomation.Utilities;
 using System.Net.Http;
 using System.Net;
 using System.Web;
@@ -24,9 +24,9 @@ using Newtonsoft.Json.Linq;
 using GoogleSheetsHelper;//Added O Snyman
 using System.Data;//Added O Snyman
 using Microsoft.Graph;
-using LibertyAutomation.LibertyAutomation.PageObjects;
+using ABSAAutomation.ABSAAutomation.PageObjects;
 using System.Text.RegularExpressions;
-using LibertyAutomation.Hooks;
+using ABSAAutomation.Hooks;
 using RestSharp;
 using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
@@ -35,7 +35,7 @@ using File = System.IO.File;
 using NUnit.Framework;
 using TechTalk.SpecFlow.Infrastructure;
 
-namespace LibertyAutomation.Utilities
+namespace ABSAAutomation.Utilities
 {   
     public class APIHelper
     {

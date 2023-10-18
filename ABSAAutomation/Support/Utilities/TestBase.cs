@@ -12,7 +12,7 @@ using System;
 
 //using Microsoft.Edge.SeleniumTools;
 
-using LibertyAutomation.Hooks;
+using ABSAAutomation.Hooks;
 using Microsoft.Graph;
 using WebDriverManager;
 using WebDriverManager.DriverConfigs.Impl;
@@ -25,7 +25,7 @@ using System.Data;
 
 
 
-namespace LibertyAutomation.Utilities
+namespace ABSAAutomation.Utilities
 
 {
 

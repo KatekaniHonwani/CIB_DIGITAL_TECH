@@ -25,12 +25,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="LibertyAutomation\StepDefinitions\LoginStepDefinition.cs" />
+    <Compile Remove="ABSAAutomation\StepDefinitions\LoginStepDefinition.cs" />
     <Compile Remove="PatientSearchStepDefinitions.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <SpecFlowObsoleteCodeBehindFiles Remove="LibertyAutomation\Features\FullCalendar - Copy.feature.cs" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="ABSAAutomation\Features\FullCalendar - Copy.feature.cs" />
   </ItemGroup>
 
   <ItemGroup>

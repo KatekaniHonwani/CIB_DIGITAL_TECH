@@ -1,6 +1,6 @@
-﻿using LibertyAutomation.LibertyAutomation.ObjectRepo;
-using LibertyAutomation.Hooks;
-using LibertyAutomation.Utilities;
+﻿using ABSAAutomation.ABSAAutomation.ObjectRepo;
+using ABSAAutomation.Hooks;
+using ABSAAutomation.Utilities;
 using Microsoft.Graph;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -11,7 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibertyAutomation.LibertyAutomation.PageObjects
+namespace ABSAAutomation.ABSAAutomation.PageObjects
 {
     class ResetPassword : ActionHelper
     {

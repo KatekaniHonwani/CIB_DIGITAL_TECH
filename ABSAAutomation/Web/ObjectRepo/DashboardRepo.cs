@@ -2,7 +2,7 @@
 using SeleniumExtras.PageObjects;
 using System.Collections.Generic;
 
-namespace LibertyAutomation.Web.ObjectRepo
+namespace ABSAAutomation.Web.ObjectRepo
 {
     class DashboardRepo
     {

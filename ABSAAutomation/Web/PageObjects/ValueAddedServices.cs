@@ -1,13 +1,13 @@
-﻿using LibertyAutomation.Hooks;
-using LibertyAutomation.Utilities;
-using LibertyAutomation.Web.ObjectRepo;
+﻿using ABSAAutomation.Hooks;
+using ABSAAutomation.Utilities;
+using ABSAAutomation.Web.ObjectRepo;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
 
-namespace LibertyAutomation.Web.PageObjects
+namespace ABSAAutomation.Web.PageObjects
 {
     class ValueAddedServices : ActionHelper
     {

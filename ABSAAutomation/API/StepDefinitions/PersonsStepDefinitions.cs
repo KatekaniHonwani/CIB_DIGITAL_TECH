@@ -1,11 +1,11 @@
-using LibertyAutomation.Utilities;
+using ABSAAutomation.Utilities;
 using Microsoft.Graph;
 using NUnit.Framework;
 using System;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Infrastructure;
 
-namespace LibertyAutomation.API.StepDefinitions
+namespace ABSAAutomation.API.StepDefinitions
 {
     [Binding]
     public class PersonsStepDefinitions

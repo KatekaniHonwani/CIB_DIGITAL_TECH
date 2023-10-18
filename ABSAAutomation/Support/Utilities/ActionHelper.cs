@@ -19,12 +19,12 @@ using iTextSharp.text.pdf;
 
 using iTextSharp.text.pdf.parser;
 
-using LibertyAutomation.Web.ObjectRepo;
+using ABSAAutomation.Web.ObjectRepo;
 
 using System.Linq;
 using SeleniumExtras.WaitHelpers;
 
-namespace LibertyAutomation.Utilities
+namespace ABSAAutomation.Utilities
 
 {
 

@@ -1,12 +1,12 @@
 ﻿using OpenQA.Selenium;
-using LibertyAutomation.Hooks;
-using LibertyAutomation.LibertyAutomation.ObjectRepo;
-using LibertyAutomation.Utilities;
-using SeleniumExtras.PageObjects;
+using ABSAAutomation.Hooks;
+using ABSAAutomation.ObjectRepo;
+using ABSAAutomation.Utilities;
+using ABSAAutomation.PageObjects;
 using Microsoft.Graph;
 using System;
 
-namespace LibertyAutomation.HealthOneAPI.AppSpecific
+namespace ABSAAutomation.HealthOneAPI.AppSpecific
 {
     class Appointments 
     {

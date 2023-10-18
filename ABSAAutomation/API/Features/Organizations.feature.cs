@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace LibertyAutomation.API.Features
+namespace ABSAAutomation.API.Features
 {
     using TechTalk.SpecFlow;
     using System;

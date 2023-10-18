@@ -1,6 +1,6 @@
-using LibertyAutomation.LibertyAutomation.PageObjects;
-using LibertyAutomation.Support.Utilities;
-using LibertyAutomation.Web.PageObjects;
+using ABSAAutomation.ABSAAutomation.PageObjects;
+using ABSAAutomation.Support.Utilities;
+using ABSAAutomation.Web.PageObjects;
 using Microsoft.Graph;
 using System;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
 
-namespace LibertyAutomation.Web.StepDefinitions
+namespace ABSAAutomation.Web.StepDefinitions
 {
     [Binding]
     public class MemberComplaintContactUSStepDefinitions 

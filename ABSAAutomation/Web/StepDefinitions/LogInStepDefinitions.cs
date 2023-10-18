@@ -1,9 +1,9 @@
 ﻿using System.Threading;
-using LibertyAutomation.LibertyAutomation.PageObjects;
-using LibertyAutomation.Web.ObjectRepo;
+using ABSAAutomation.ABSAAutomation.PageObjects;
+using ABSAAutomation.Web.ObjectRepo;
 using TechTalk.SpecFlow;
 
-namespace LibertyAutomation.Web.StepDefinitions
+namespace ABSAAutomation.Web.StepDefinitions
 {
     [Binding]
     public class LogInStepDefinitions

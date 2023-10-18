@@ -1,4 +1,4 @@
-﻿using LibertyAutomation.Hooks;
+﻿using ABSAAutomation.Hooks;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibertyAutomation.LibertyAutomation.ObjectRepo
+namespace ABSAAutomation.ABSAAutomation.ObjectRepo
 {
      class ResetPasswordRepo
     {

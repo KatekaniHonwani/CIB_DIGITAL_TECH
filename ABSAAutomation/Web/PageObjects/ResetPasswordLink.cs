@@ -1,6 +1,6 @@
 ﻿
-using LibertyAutomation.Hooks;
-using LibertyAutomation.Utilities;
+using ABSAAutomation.Hooks;
+using ABSAAutomation.Utilities;
 using Microsoft.Graph;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
@@ -9,9 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibertyAutomation.Web.ObjectRepo;
+using ABSAAutomation.Web.ObjectRepo;
 
-namespace LibertyAutomation.LibertyAutomation.PageObjects
+namespace ABSAAutomation.ABSAAutomation.PageObjects
 {
      class ResetPasswordLink : ActionHelper
     {
