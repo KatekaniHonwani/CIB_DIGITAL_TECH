@@ -61,7 +61,7 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://mule-worker-internal-qa-corporate-exp-entities-api.ir-e1.cloudhub.io:8092.
+        ///   Looks up a localized string similar to https://dog.ceo/dog-api/.
         /// </summary>
         internal static string ApiURL {
             get {
@@ -115,7 +115,7 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bongs.Lushaba@altron.com.
+        ///   Looks up a localized string similar to KatekaniHonwani@gmail.com.
         /// </summary>
         internal static string ExcelUser {
             get {
@@ -158,7 +158,7 @@ namespace ABSAAutomation {
                 return ResourceManager.GetString("TakeScreenshots", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to https://healthone-uat.ABSAAutomation.com/.
         /// </summary>

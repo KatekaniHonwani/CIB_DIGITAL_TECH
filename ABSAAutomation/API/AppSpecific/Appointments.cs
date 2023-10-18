@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 using ABSAAutomation.Hooks;
-using ABSAAutomation.ObjectRepo;
+using ABSAAutomation.ABSAAutomation.ObjectRepo;
 using ABSAAutomation.Utilities;
-using ABSAAutomation.PageObjects;
+using ABSAAutomation.ABSAAutomation.PageObjects;
 using Microsoft.Graph;
 using System;
 

@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ApiURL" xml:space="preserve">
-    <value>https://mule-worker-internal-qa-corporate-exp-entities-api.ir-e1.cloudhub.io:8092</value>
-    <comment>https://api-lb-test.liberty.co.za/ci-corporate-exp-entities-api</comment>
+    <value>https://dog.ceo/dog-api/</value>
+    <comment>https://dog.ceo/dog-api/</comment>
   </data>
   <data name="BrowserName" xml:space="preserve">
     <value>EDGE</value>
@@ -139,7 +139,7 @@
     <value>GOOGLESHEETS</value>
   </data>
   <data name="ExcelUser" xml:space="preserve">
-    <value>Bongs.Lushaba@altron.com</value>
+    <value>KatekaniHonwani@gmail.com</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Norris1234!</value>

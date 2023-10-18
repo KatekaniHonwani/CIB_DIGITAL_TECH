@@ -52,6 +52,36 @@ namespace ABSAAutomation.Utilities
             gsh = new TestBase();
         }
 
+        public string[] getAPIRequest(String apiEndpoint, String jsonRequestHeaders)
+        {
+            JObject jsonObject = JObject.Parse(File.ReadAllText(liberty.sPath + jsonRequestHeaders));
+
+
+            String fullApiEndpoint = config.ApiURL + apiEndpoint;
+
+            string[] strArrResponse = new string[2];
+
+            var options = new RestClientOptions(fullApiEndpoint)
+            {
+                MaxTimeout = -1,
+            };
+
+            RestRequest request = new RestRequest(fullApiEndpoint, Method.Get);
+
+            foreach (var pair in jsonObject)
+            {
+                request.AddHeader(pair.Key.ToString(), pair.Value.ToString());
+
+            }
+
+
+
+            strArrResponse[1] = null;
+
+            return strArrResponse;
+        }
+
+
         public string[] getRestRequest(String apiEndpoint, String certFilePath, String certPassword, String jsonRequestHeaders)
         {
             JObject jsonObject = JObject.Parse(File.ReadAllText(liberty.sPath + jsonRequestHeaders));
