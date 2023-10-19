@@ -55,7 +55,7 @@ namespace GoogleSheetsHelper
 
             using (var stream =
 
-                new FileStream(liberty.sPath + "\\credentials.json", FileMode.Open, FileAccess.Read))
+                new FileStream(Absa.sPath + "\\credentials.json", FileMode.Open, FileAccess.Read))
 
             {
 
@@ -66,7 +66,7 @@ namespace GoogleSheetsHelper
                 
 
 
-                string credPath = liberty.sPath + "\\token.json";
+                string credPath = Absa.sPath + "\\token.json";
 
 
 

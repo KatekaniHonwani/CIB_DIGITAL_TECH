@@ -118,22 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ApiURL" xml:space="preserve">
-    <value>https://dog.ceo/dog-api/</value>
+    <value>https://dog.ceo/dog-api</value>
     <comment>https://dog.ceo/dog-api/</comment>
   </data>
   <data name="BrowserName" xml:space="preserve">
     <value>EDGE</value>
-  </data>
-  <data name="CertificatePassword" xml:space="preserve">
-    <value>12345</value>
-  </data>
-  <data name="CompassDBPassword" xml:space="preserve">
-    <value>Milktart</value>
-    <comment>Compass database password</comment>
-  </data>
-  <data name="CompassDBUsername" xml:space="preserve">
-    <value>Interface</value>
-    <comment>Compass database username</comment>
   </data>
   <data name="DataType" xml:space="preserve">
     <value>GOOGLESHEETS</value>
@@ -142,16 +131,13 @@
     <value>KatekaniHonwani@gmail.com</value>
   </data>
   <data name="Password" xml:space="preserve">
-    <value>Norris1234!</value>
+    <value>Katekani1234!</value>
   </data>
   <data name="TakeScreenshots" xml:space="preserve">
     <value>Yes</value>
   </data>
   <data name="URL" xml:space="preserve">
     <value>https://healthone-uat.ABSAAutomation.com/</value>
-  </data>
-  <data name="Username" xml:space="preserve">
-    <value>chuck@norris.com</value>
   </data>
   <data name="SspUrl" xml:space="preserve">
     <value>https://lcportal-qa.liberty.co.za/identity-server/Identity/Account/EmailRequest</value>

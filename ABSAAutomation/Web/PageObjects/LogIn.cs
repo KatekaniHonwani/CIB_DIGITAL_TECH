@@ -17,7 +17,7 @@ namespace ABSAAutomation.ABSAAutomation.PageObjects
         public LogIn()
         {
             logInRepo = new LogInRepo();
-            driver = liberty.driver;
+            driver = Absa.driver;
             PageFactory.InitElements(driver,logInRepo);
 
         }

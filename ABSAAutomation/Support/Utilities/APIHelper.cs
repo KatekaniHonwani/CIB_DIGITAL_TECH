@@ -54,7 +54,7 @@ namespace ABSAAutomation.Utilities
 
         public string[] getAPIRequest(String apiEndpoint, String jsonRequestHeaders)
         {
-            JObject jsonObject = JObject.Parse(File.ReadAllText(liberty.sPath + jsonRequestHeaders));
+            JObject jsonObject = JObject.Parse(File.ReadAllText(Absa.sPath + jsonRequestHeaders));
 
 
             String fullApiEndpoint = config.ApiURL + apiEndpoint;
@@ -84,7 +84,7 @@ namespace ABSAAutomation.Utilities
 
         public string[] getRestRequest(String apiEndpoint, String certFilePath, String certPassword, String jsonRequestHeaders)
         {
-            JObject jsonObject = JObject.Parse(File.ReadAllText(liberty.sPath + jsonRequestHeaders));
+            JObject jsonObject = JObject.Parse(File.ReadAllText(Absa.sPath + jsonRequestHeaders));
 
 
             String fullApiEndpoint = config.ApiURL + apiEndpoint; 
@@ -95,7 +95,7 @@ namespace ABSAAutomation.Utilities
             {
                 MaxTimeout = -1,
             };
-            string fullCertPath = liberty.sPath + certFilePath;
+            string fullCertPath = Absa.sPath + certFilePath;
 
             X509Certificate2 certificate = new X509Certificate2(fullCertPath, certPassword);
 
@@ -125,7 +125,7 @@ namespace ABSAAutomation.Utilities
         {
            // api = new .API.APICallSpecific();
             String[] soapResponse = new string[2];
-            string sSOAPPath = liberty.sPath + sPath;
+            string sSOAPPath = Absa.sPath + sPath;
             XmlDocument doc = new XmlDocument();
             doc.Load((sSOAPPath));
           //  doc = api.ManipulatePayLoad(doc, dt, iRow, SBSCall, optionalstr, optionalstr2, optionalstr3, optionalstr4); //Calls a method that updates the XML payload with data from the Google Sheet
@@ -171,7 +171,7 @@ namespace ABSAAutomation.Utilities
             XmlWriterSettings xws = new XmlWriterSettings();
             xws.OmitXmlDeclaration = true;
             xws.Indent = true;
-            string sUpdateXMLPath = liberty.sPath + sPath;
+            string sUpdateXMLPath = Absa.sPath + sPath;
             XElement x;
 
             using (XmlWriter xw = XmlWriter.Create(sb, xws))
@@ -211,7 +211,7 @@ namespace ABSAAutomation.Utilities
         public static XmlDocument ReplaceInFile(string[] searchText, string[] replaceText, string spath)
         {
             String Path = System.AppDomain.CurrentDomain.BaseDirectory;
-            string filePath = liberty.sPath + "TestData\\Advisor\\CreateNewAdvisor.txt";
+            string filePath = Absa.sPath + "TestData\\Advisor\\CreateNewAdvisor.txt";
 
             var content = string.Empty;
             using (StreamReader reader = new StreamReader(filePath))
@@ -235,7 +235,7 @@ namespace ABSAAutomation.Utilities
         public void UpdateJSONArray(String sfieldJSONArray, string[] sdatatoUpdate, string []sdatatoUpdateWith,string sFilePath)
         {
             string jsonString = null;
-            string json = System.IO.File.ReadAllText(liberty.sPath + sFilePath);
+            string json = System.IO.File.ReadAllText(Absa.sPath + sFilePath);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
             for (int i = 0; i < sdatatoUpdate.Length; i++)
             { 
@@ -247,13 +247,13 @@ namespace ABSAAutomation.Utilities
                             jsonObj[sfieldJSONArray][0][sdatatoUpdate[i]] = sdatatoUpdateWith[i].ToString();
              }
             jsonString = JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
-            System.IO.File.WriteAllText(liberty.sPath + sFilePath, jsonString);
+            System.IO.File.WriteAllText(Absa.sPath + sFilePath, jsonString);
         }
 
         public void UpdateJSON(string[] sdatatoUpdate, string[] sdatatoUpdateWith, string sFilePath)
         {
             string jsonString = null;
-            string json = System.IO.File.ReadAllText(liberty.sPath + sFilePath);
+            string json = System.IO.File.ReadAllText(Absa.sPath + sFilePath);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
             for (int i = 0; i < sdatatoUpdate.Length; i++)
             {
@@ -266,7 +266,7 @@ namespace ABSAAutomation.Utilities
                     jsonObj[sdatatoUpdate[i]] = sdatatoUpdateWith[i];
             }
             jsonString = JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
-            System.IO.File.WriteAllText(liberty.sPath + sFilePath, jsonString);
+            System.IO.File.WriteAllText(Absa.sPath + sFilePath, jsonString);
         }
 
         public string [] postRestRequest(string sURL, string sFilePath, string sMemAPIKey)
@@ -279,7 +279,7 @@ namespace ABSAAutomation.Utilities
             request.AddHeader("Mem-Api-Key", sMemAPIKey);
     
             // var body = new
-            string json = System.IO.File.ReadAllText(liberty.sPath+sFilePath);
+            string json = System.IO.File.ReadAllText(Absa.sPath+sFilePath);
            // dynamic jsonObj = JsonConvert.DeserializeObject(json);
             //jsonObj["requestUtcTime"] = DateTime.UtcNow.ToString("s") + "Z";
           //  string jsonString = JsonConvert.SerializeObject(jsonObj, Newtonsoft.Json.Formatting.Indented);
@@ -314,7 +314,7 @@ namespace ABSAAutomation.Utilities
             String[] dataToUpdatewith = { gsh.GetCellValue(dTable, "FirstName", iRow), gsh.GetCellValue(dTable, "Surname", iRow), gsh.GetCellValue(dTable, "Gender", iRow), gsh.GetCellValue(dTable, "Title", iRow), gsh.GetCellValue(dTable, "DateOfBirth", iRow), gsh.GetCellValue(dTable, "MobilePhone", iRow), gsh.GetCellValue(dTable, "Country", iRow), gsh.GetCellValue(dTable, "Email", iRow) };
             String[] dataToUpdate = { "$FirstName", "$Surname", "$Gender", "$Title", "$DateOfBirth", "$MobilePhone", "$Country", "$Email" };
             // add our body to the request
-            string sUpdateSOAPPath = liberty.sPath + sPath;
+            string sUpdateSOAPPath = Absa.sPath + sPath;
 
             var xmldoc = ReplaceInFile(dataToUpdate, dataToUpdatewith, sUpdateSOAPPath);
             // XmlDocument doc = new XmlDocument();

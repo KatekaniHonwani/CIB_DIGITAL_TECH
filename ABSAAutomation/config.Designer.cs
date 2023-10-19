@@ -61,7 +61,7 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://dog.ceo/dog-api/.
+        ///   Looks up a localized string similar to https://dog.ceo/dog-api.
         /// </summary>
         internal static string ApiURL {
             get {
@@ -75,33 +75,6 @@ namespace ABSAAutomation {
         internal static string BrowserName {
             get {
                 return ResourceManager.GetString("BrowserName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 12345.
-        /// </summary>
-        internal static string CertificatePassword {
-            get {
-                return ResourceManager.GetString("CertificatePassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Milktart.
-        /// </summary>
-        internal static string CompassDBPassword {
-            get {
-                return ResourceManager.GetString("CompassDBPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Interface.
-        /// </summary>
-        internal static string CompassDBUsername {
-            get {
-                return ResourceManager.GetString("CompassDBUsername", resourceCulture);
             }
         }
         
@@ -124,7 +97,7 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Norris1234!.
+        ///   Looks up a localized string similar to Katekani1234!.
         /// </summary>
         internal static string Password {
             get {
@@ -165,15 +138,6 @@ namespace ABSAAutomation {
         internal static string URL {
             get {
                 return ResourceManager.GetString("URL", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to chuck@norris.com.
-        /// </summary>
-        internal static string Username {
-            get {
-                return ResourceManager.GetString("Username", resourceCulture);
             }
         }
     }

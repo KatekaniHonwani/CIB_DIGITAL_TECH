@@ -17,7 +17,7 @@ namespace ABSAAutomation.Web.PageObjects
         public ValueAddedServices()
         {
 
-            driver = liberty.driver;
+            driver = Absa.driver;
             vasRepo = new ValueAddedServicesRepo();
 
             PageFactory.InitElements(driver, vasRepo);

@@ -10,18 +10,23 @@
     <Compile Remove="Drivers\**" />
     <Compile Remove="HealthOne\**" />
     <Compile Remove="Hooks2\**" />
+    <Compile Remove="Support\NewFolder\**" />
     <EmbeddedResource Remove="Drivers\**" />
     <EmbeddedResource Remove="HealthOne\**" />
     <EmbeddedResource Remove="Hooks2\**" />
+    <EmbeddedResource Remove="Support\NewFolder\**" />
     <None Remove="Drivers\**" />
     <None Remove="HealthOne\**" />
     <None Remove="Hooks2\**" />
+    <None Remove="Support\NewFolder\**" />
     <SpecFlowFeatureFiles Remove="Drivers\**" />
     <SpecFlowFeatureFiles Remove="HealthOne\**" />
     <SpecFlowFeatureFiles Remove="Hooks2\**" />
+    <SpecFlowFeatureFiles Remove="Support\NewFolder\**" />
     <SpecFlowObsoleteCodeBehindFiles Remove="Drivers\**" />
     <SpecFlowObsoleteCodeBehindFiles Remove="HealthOne\**" />
     <SpecFlowObsoleteCodeBehindFiles Remove="Hooks2\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Support\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -73,7 +78,7 @@
   <ItemGroup>
     <Folder Include="Screenshots\" />
     <Folder Include="Reports\" />
-    <Folder Include="Support\NewFolder\" />
+    <Folder Include="TestData\API\" />
     <Folder Include="TestData\BrowserLogs\" />
   </ItemGroup>
 

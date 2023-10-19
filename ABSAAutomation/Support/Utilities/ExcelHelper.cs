@@ -213,7 +213,7 @@ namespace ABSAAutomation.Utilities
 
                         row = ((int)worksheet.RowCount) + 1;
 
-                        liberty.generatedDataRow = row + 1;
+                        Absa.generatedDataRow = row + 1;
 
                     }
 

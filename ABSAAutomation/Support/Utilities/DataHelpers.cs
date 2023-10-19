@@ -487,7 +487,7 @@ namespace ABSAAutomation.Utilities
 
         public static void WriteBrowserLogs(IWebDriver driver)
         {
-             string sConsoleLogs = liberty.sPath + "TestData\\BrowserLogs\\Logs.txt";
+             string sConsoleLogs = Absa.sPath + "TestData\\BrowserLogs\\Logs.txt";
             if (!System.IO.File.Exists(sConsoleLogs))
             {
                 System.IO.File.Create(sConsoleLogs).Dispose();

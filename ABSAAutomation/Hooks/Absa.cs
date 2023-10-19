@@ -19,7 +19,7 @@ using System.Diagnostics;
 namespace ABSAAutomation.Hooks
 {
     [Binding]
-    class liberty : TestBase
+    class Absa : TestBase
     {
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
         public static new IWebDriver driver;
@@ -65,7 +65,7 @@ namespace ABSAAutomation.Hooks
                 driver = SetupBrowser(config.BrowserName);
             }
 
-            scenario = liberty.featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
+            scenario = Absa.featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
 
             // scenario = featureName.CreateNode<Scenario>(ScenarioContext.Current.ScenarioInfo.Title);
             //   Console.Out.WriteLine(scenario);

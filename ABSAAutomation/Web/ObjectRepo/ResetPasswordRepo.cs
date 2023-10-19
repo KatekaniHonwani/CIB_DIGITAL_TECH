@@ -17,7 +17,7 @@ namespace ABSAAutomation.ABSAAutomation.ObjectRepo
 
         public ResetPasswordRepo()
         {
-            driver = liberty.driver;
+            driver = Absa.driver;
         }
 
 

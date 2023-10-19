@@ -16,7 +16,7 @@ namespace ABSAAutomation.Web.PageObjects
          public LogoutDialogBoxPopUp()
          {
              logoutDialogBoxPopUpRepo = new LogoutDialogBoxPopUpRepo();
-             driver = liberty.driver;
+             driver = Absa.driver;
              PageFactory.InitElements(driver,logoutDialogBoxPopUpRepo);
          }
          

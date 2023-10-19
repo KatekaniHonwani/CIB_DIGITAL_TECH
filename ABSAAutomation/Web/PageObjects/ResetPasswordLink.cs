@@ -28,7 +28,7 @@ namespace ABSAAutomation.ABSAAutomation.PageObjects
 
         public ResetPasswordLink()
         {
-            driver = liberty.driver;
+            driver = Absa.driver;
             // resetpassword = new ResetPassRep();
             gsh = new TestBase();
             resetPasswordRepo = new ResetPasswordLinkRepo();

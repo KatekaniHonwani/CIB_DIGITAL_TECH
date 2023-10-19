@@ -21,7 +21,7 @@ namespace ABSAAutomation.Web.PageObjects
 
         public MemberComplaintContact()
         {
-            driver = liberty.driver;
+            driver = Absa.driver;
 
             memberComplaintContactRepo = new MemberComplaintContactRepo();
             PageFactory.InitElements(driver, memberComplaintContactRepo);

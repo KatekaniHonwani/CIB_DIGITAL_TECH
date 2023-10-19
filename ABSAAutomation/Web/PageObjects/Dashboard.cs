@@ -19,7 +19,7 @@ namespace ABSAAutomation.Web.PageObjects
         public Dashboard()
         {
 
-            driver = liberty.driver;
+            driver = Absa.driver;
             dashboardRepo = new DashboardRepo();
 
             PageFactory.InitElements(driver, dashboardRepo);
