@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ABSAAutomation.API.Features
+namespace ABSAAutomation.Web.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -20,22 +20,22 @@ namespace ABSAAutomation.API.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Task1API")]
-    public partial class Task1APIFeature
+    [NUnit.Framework.DescriptionAttribute("CIB DIGITAL TECH - Task 2 Web")]
+    public partial class CIBDIGITALTECH_Task2WebFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private static string[] featureTags = ((string[])(null));
         
-#line 1 "Task1API.feature"
+#line 1 "Task2Web.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "API/Features", "Task1API", "A short summary of the feature", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Web/Features", "CIB DIGITAL TECH - Task 2 Web", "A short summary of the feature", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -74,22 +74,15 @@ namespace ABSAAutomation.API.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("[Perform an API request to produce a list of all dog breeds]")]
+        [NUnit.Framework.DescriptionAttribute("Navigation to Way2Automation Application")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("/breeds/list/all", null)]
-        public void PerformAnAPIRequestToProduceAListOfAllDogBreeds(string uri, string[] exampleTags)
+        public void NavigationToWay2AutomationApplication()
         {
-            string[] @__tags = new string[] {
+            string[] tagsOfScenario = new string[] {
                     "mytag"};
-            if ((exampleTags != null))
-            {
-                @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
-            }
-            string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Uri", uri);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Perform an API request to produce a list of all dog breeds]", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Navigation to Way2Automation Application", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 5
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -99,26 +92,28 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
+#line 6
+ testRunner.Given("user has \"http://www.way2automation.com/angularjs-protractor/webtables/\" to Way2A" +
+                        "utomation application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 7
-          testRunner.When(string.Format("the user makes a GET request to All Dog breeds Service \"{0}\"", uri), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("User navigate to the application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
-          testRunner.Then("the user is presented with All Dog breeds information and a success status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("user is presented with list of users in the table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("[Using code, verify if specific breed is within the list]")]
-        [NUnit.Framework.TestCaseAttribute("/breeds/list/all", null)]
-        public void UsingCodeVerifyIfSpecificBreedIsWithinTheList(string uri, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("Adding Users to the table")]
+        public void AddingUsersToTheTable()
         {
-            string[] tagsOfScenario = exampleTags;
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Uri", uri);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Using code, verify if specific breed is within the list]", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 15
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding Users to the table", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 10
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -128,12 +123,41 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 16
-    testRunner.When(string.Format("the user makes a GET request to Dog breeds Service \"{0}\" with valid \"retriever\" a" +
-                            "s parameter", uri), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 11
+  testRunner.Given("the user is on web tables", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 17
-    testRunner.Then("the user is presented with Person information and a success status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "first_Name",
+                            "last_Name",
+                            "user_Name",
+                            "password",
+                            "customer",
+                            "role",
+                            "email",
+                            "cell"});
+                table1.AddRow(new string[] {
+                            "FName1",
+                            "LName1",
+                            "User1",
+                            "Pass1",
+                            "Company AAA",
+                            "Admin",
+                            "admin@mail.com",
+                            "082555"});
+                table1.AddRow(new string[] {
+                            "FName2",
+                            "LName2",
+                            "User2",
+                            "Pass2",
+                            "Company BBB",
+                            "Customer",
+                            "customer@mail.com",
+                            "083444"});
+#line 12
+  testRunner.When("the user adds a new user", ((string)(null)), table1, "When ");
+#line hidden
+#line 18
+  testRunner.Then("User is displayed on the user table", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

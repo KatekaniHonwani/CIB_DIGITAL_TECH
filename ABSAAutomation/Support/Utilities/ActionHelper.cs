@@ -32,10 +32,6 @@ namespace ABSAAutomation.Utilities
 
     {
 
-
-
-
-
         public String GetCurrentUrl(IWebDriver driver)
 
         {
@@ -61,8 +57,6 @@ namespace ABSAAutomation.Utilities
             return url;
 
         }
-
-
 
         public string GetClientIdFromCurrentUrl(IWebDriver driver)
 
@@ -126,8 +120,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public bool EnterValue1(IWebElement element, IWebDriver driver, string Value)
 
         {
@@ -160,8 +152,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void EnterValue(IWebElement sElement, IWebDriver driver, string Value)
 
         {
@@ -190,8 +180,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void ClearFieldValue(IWebElement sElement, IWebDriver driver)
 
         {
@@ -218,7 +206,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
         public void SwitchToNewWindow(IWebDriver driver)
         {
 
@@ -243,20 +230,6 @@ namespace ABSAAutomation.Utilities
             waitForFrame.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.FrameToBeAvailableAndSwitchToIt(FrameToFocusOn));
 
         }
-
-
-
-        /*public void SwitchFocusToFrame(IWebDriver driver, IWebElement FrameToFocusOn)
-
-        {
-
-            WebDriverWait waitForFrame = new WebDriverWait(driver, new TimeSpan(0, 0, 20));
-
-            waitForFrame.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.FrameToBeAvailableAndSwitchToIt(FrameToFocusOn));
-
-        }*/
-
-
 
         public void SelectDropDownItem(IWebElement sElement, IWebDriver driver, string Identifier, string ItemToSelect)
 
@@ -303,8 +276,6 @@ namespace ABSAAutomation.Utilities
             }
 
         }
-
-
 
         public string GetValueOfElement(IWebElement sElement, IWebDriver driver)
 
@@ -369,8 +340,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public bool WaitForElementClickable1(IWebElement element, IWebDriver driver)
 
         {
@@ -398,7 +367,6 @@ namespace ABSAAutomation.Utilities
             }
 
         }
-
 
         public void UploadFileofTypeEqualsFile(IWebElement sElement, IWebDriver driver, string filepath)
 
@@ -442,12 +410,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
-
-
-
-
         public void WaitForElementClickable(IWebElement sElement, IWebDriver driver)
 
         {
@@ -460,8 +422,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void ScrollTo(IWebElement element, IWebDriver driver)
 
         {
@@ -472,8 +432,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void ScrollTo2(IWebElement element, IWebDriver driver)
 
         {
@@ -481,8 +439,6 @@ namespace ABSAAutomation.Utilities
             ((IJavaScriptExecutor)driver).ExecuteScript("arguments[0].scrollIntoView(true);", element);
 
         }
-
-
 
         public void ClearFieldAndEnterValueUsingActionBuilder(IWebElement sElement, IWebDriver driver, String sData)
 
@@ -532,8 +488,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void ClearFieldUsingActionBuilder(IWebElement sElement, IWebDriver driver)
 
         {
@@ -574,8 +528,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void EnterValueUsingActionBuilder(IWebElement sElement, IWebDriver driver, String sData)
 
         {
@@ -614,8 +566,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void ClickObjectJSExecuter(IWebElement sElement, IWebDriver driver)
 
         {
@@ -640,8 +590,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public void GetPageUri(IWebDriver driver)
 
         {
@@ -653,8 +601,6 @@ namespace ABSAAutomation.Utilities
             Console.WriteLine(url);
 
         }
-
-
 
         public bool IsElementPresent(IWebElement by, IWebDriver driver)
 
@@ -769,8 +715,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public bool CheckisSelected(IWebElement sElement, IWebDriver driver)
 
         {
@@ -796,11 +740,6 @@ namespace ABSAAutomation.Utilities
             return isSelected;
 
         }
-
-
-
-
-
 
         public bool IsElementChecked(IWebElement sElement, IWebDriver driver)
 
@@ -835,8 +774,6 @@ namespace ABSAAutomation.Utilities
             return c;
 
         }
-
-
 
         public bool IsElementDisabled(IWebElement sElement, IWebDriver driver)
 
@@ -874,8 +811,6 @@ namespace ABSAAutomation.Utilities
 
         }
 
-
-
         public bool isElementEnabled(IWebElement sElement, IWebDriver driver)
 
         {
@@ -901,8 +836,6 @@ namespace ABSAAutomation.Utilities
             return c;
 
         }
-
-
 
         public static bool VerifyLinkResponse(string url)
 
@@ -931,8 +864,6 @@ namespace ABSAAutomation.Utilities
             return linkResponse;
 
         }
-
-
 
         public string Between2Strings(string Text, string FirstString, string LastString)
 

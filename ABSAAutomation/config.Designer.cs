@@ -115,15 +115,6 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://lcportal-qa.liberty.co.za/identity-server/Identity/Account/EmailRequest.
-        /// </summary>
-        internal static string SspUrl {
-            get {
-                return ResourceManager.GetString("SspUrl", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Yes.
         /// </summary>
         internal static string TakeScreenshots {
@@ -133,7 +124,7 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://healthone-uat.ABSAAutomation.com/.
+        ///   Looks up a localized string similar to http://www.way2automation.com/angularjs-protractor/webtables/.
         /// </summary>
         internal static string URL {
             get {

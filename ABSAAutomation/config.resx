@@ -137,10 +137,7 @@
     <value>Yes</value>
   </data>
   <data name="URL" xml:space="preserve">
-    <value>https://healthone-uat.ABSAAutomation.com/</value>
-  </data>
-  <data name="SspUrl" xml:space="preserve">
-    <value>https://lcportal-qa.liberty.co.za/identity-server/Identity/Account/EmailRequest</value>
+    <value>http://www.way2automation.com/angularjs-protractor/webtables/</value>
   </data>
   <data name="SspEmail" xml:space="preserve">
     <value>member9@test.com</value>
