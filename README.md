@@ -31,6 +31,7 @@ Extent Manager
 
 Test Base 
 - Initialise report
+# Run the Application
 
 Hooks
 Drive the solution have more like testNg 
