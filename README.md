@@ -38,6 +38,9 @@ Hooks
 Drive the solution have more like testNg 
 
 Reports
+![image](https://github.com/KatekaniHonwani/CIB_DIGITAL_TECH/assets/27765959/310f9171-4772-438b-b0cd-e4fdc413c968)
+
+
 - Report and living docks
 
 Confiq
