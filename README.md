@@ -10,6 +10,7 @@ $ git clone git@github.com:KatekaniHonwano/CIB_DIGITAL_TECH.git
 # Automation Framework
 #Stories are written in Ghekins language
 Tooling WEB & API
+- Visual Studio
 - Selenium
 - API(HttpClient & RestSharp)
 - BBD - Framework - Specflow
