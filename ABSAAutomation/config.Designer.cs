@@ -61,7 +61,7 @@ namespace ABSAAutomation {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to https://dog.ceo/dog-api.
+        ///   Looks up a localized string similar to https://dog.ceo/api/breeds/list/all.
         /// </summary>
         internal static string ApiURL {
             get {

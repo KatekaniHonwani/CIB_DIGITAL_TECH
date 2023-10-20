@@ -16,6 +16,8 @@ namespace ABSAAutomation.Web.StepDefinitions
         ScenarioContext scenarionContext;
         FeatureContext featureContext;
 
+        bool tableDisplayed = true;
+
         public CIBDIGITALTECH_Task2WebStepDefinitions(ScenarioContext scenarionContext, FeatureContext featureContext)
         {
             task2Web = new Task2Web();
@@ -39,7 +41,7 @@ namespace ABSAAutomation.Web.StepDefinitions
         [Then(@"user is presented with list of users in the table")]
         public void ThenUserIsPresentedWithListOfUsersInTheTable()
         {
-            bool tableDisplayed = true;
+           
             task2Web.VerifyTableWithIsAvailable();
             tableDisplayed = true;
 
@@ -50,7 +52,8 @@ namespace ABSAAutomation.Web.StepDefinitions
         public void GivenTheUserIsOnWebTables()
         {
             // task2Web.VerifyTableWithIsAvailable();
-            Convert.ToBoolean(featureContext["tDisplay"]).Should().BeTrue();
+            task2Web.NavigateToWay2automation(config.URL);
+           //Convert.ToBoolean(featureContext["tDisplay"]).Should().BeTrue();
         }
 
         [When(@"the user adds a new user")]
@@ -73,7 +76,10 @@ namespace ABSAAutomation.Web.StepDefinitions
         [Then(@"User is displayed on the user table")]
         public void ThenUserIsDisplayedOnTheUserTable()
         {
-            Convert.ToBoolean(featureContext["tDisplay"]).Should().BeTrue();
+            task2Web.VerifyTableWithIsAvailable();
+            tableDisplayed = true;
+
+            featureContext["tDisplay"] = tableDisplayed;
         }
     }
 }

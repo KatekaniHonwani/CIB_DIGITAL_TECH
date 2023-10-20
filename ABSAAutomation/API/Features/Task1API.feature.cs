@@ -76,7 +76,7 @@ namespace ABSAAutomation.API.Features
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("[Perform an API request to produce a list of all dog breeds]")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        [NUnit.Framework.TestCaseAttribute("/breeds/list/all", null)]
+        [NUnit.Framework.TestCaseAttribute("https://dog.ceo/api/breeds/list/all", null)]
         public void PerformAnAPIRequestToProduceAListOfAllDogBreeds(string uri, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -103,21 +103,21 @@ this.ScenarioInitialize(scenarioInfo);
           testRunner.When(string.Format("the user makes a GET request to All Dog breeds Service \"{0}\"", uri), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 8
-          testRunner.Then("the user is presented with All Dog breeds information and a success status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+          testRunner.Then("the user is presented with All information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("[Using code, verify if specific breed is within the list]")]
-        [NUnit.Framework.TestCaseAttribute("/breeds/list/all", null)]
-        public void UsingCodeVerifyIfSpecificBreedIsWithinTheList(string uri, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("[Verify specific breed is within the list]")]
+        [NUnit.Framework.TestCaseAttribute("retriever", null)]
+        public void VerifySpecificBreedIsWithinTheList(string breedName, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("Uri", uri);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Using code, verify if specific breed is within the list]", null, tagsOfScenario, argumentsOfScenario, featureTags);
+            argumentsOfScenario.Add("breedName", breedName);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Verify specific breed is within the list]", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 15
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -129,11 +129,69 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 16
-    testRunner.When(string.Format("the user makes a GET request to Dog breeds Service \"{0}\" with valid \"retriever\" a" +
-                            "s parameter", uri), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.When(string.Format("the user makes a GET request to dog breeds with \"{0}\" as parameter", breedName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 17
-    testRunner.Then("the user is presented with Person information and a success status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("the user is presented with breed information and a success status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("[Perform an API request to produce a list of sub-breeds]")]
+        [NUnit.Framework.TestCaseAttribute("retriever", null)]
+        public void PerformAnAPIRequestToProduceAListOfSub_Breeds(string breedName, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("breedName", breedName);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Perform an API request to produce a list of sub-breeds]", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 23
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 24
+    testRunner.When(string.Format("the user makes a GET request to get list of sub-breeds with \"{0}\" as parameter", breedName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 25
+    testRunner.Then("the user is presented with list of sub breeds information and a success status co" +
+                        "de", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("[Perform an API request to produce a random image / link for the sub-breed]")]
+        [NUnit.Framework.TestCaseAttribute("golden", null)]
+        public void PerformAnAPIRequestToProduceARandomImageLinkForTheSub_Breed(string subBreedName, string[] exampleTags)
+        {
+            string[] tagsOfScenario = exampleTags;
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            argumentsOfScenario.Add("subBreedName", subBreedName);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("[Perform an API request to produce a random image / link for the sub-breed]", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 31
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 32
+    testRunner.When(string.Format("the user makes a GET request to get random image with \"{0}\" as parameter", subBreedName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 33
+    testRunner.Then("the user is presented with image and a success status code", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();

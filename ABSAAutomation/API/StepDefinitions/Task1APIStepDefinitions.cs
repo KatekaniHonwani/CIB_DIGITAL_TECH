@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using ABSAAutomation.Web.PageObjects;
 using ABSAAutomation.Support.Utilities;
+using Microsoft.AspNetCore.Http.Extensions;
 
 namespace ABSAAutomation.API.StepDefinitions
 {
@@ -20,13 +21,15 @@ namespace ABSAAutomation.API.StepDefinitions
         ScenarioContext scenarioContext;
         String[] response;
 
+        private HttpClient client;
+        private string apiBaseUrl = "https://dog.ceo/api";
+
         BreedResponse breedResponse;
 
         public Task1APIStepDefinitions(ISpecFlowOutputHelper specflowOutputHelper, ScenarioContext scenarioContext)
         {
             this.specflowOutputHelper = specflowOutputHelper;
             apiHelper = new APIHelper();
-
             this.scenarioContext = scenarioContext;
             breedResponse = new BreedResponse();
         }
@@ -34,111 +37,67 @@ namespace ABSAAutomation.API.StepDefinitions
         [When(@"the user makes a GET request to All Dog breeds Service ""([^""]*)""")]
         public async void WhenTheUserMakesAGETRequestToAllDogBreedsService(string Uri)
         {
-            //response = apiHelper.getAPIRequest(Uri, scenarioContext["path"].ToString());
 
-            // Define the base URL of the Dog API
-            string apiUrl = "https://dog.ceo/api";
+            String[] response = apiHelper.getRestRequest(Uri, "");
 
-            // Create an instance of HttpClient to make the API request
-            using (var httpClient = new HttpClient())
-            {
-                try
-                {
-                    // Specify the endpoint for getting a list of all dog breeds
-                    string endpoint = "/breeds/list/all";
+            scenarioContext["content"] = response[0];
+            scenarioContext["status"] = response[1];
 
-                    // Combine the base URL and endpoint to form the complete API URL
-                    string requestUrl = $"{config.ApiURL}{Uri}";
-
-                    // Make the GET request to the API
-                    HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
-
-                    // Check if the request was successful (status code 200)
-                    if (response.IsSuccessStatusCode)
-                    {
-                        // Read the response content as a JSON string
-                        string jsonResponse = await response.Content.ReadAsStringAsync();
-
-                        // Deserialize the JSON response into a C# object
-                        var breedResponse = JsonConvert.DeserializeObject<BreedResponse>(jsonResponse);
-
-                        // Access the list of dog breeds
-                        foreach (var breed in breedResponse.Message)
-                        {
-                            Console.WriteLine(breed);
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"API request failed with status code: {response.StatusCode}");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"An error occurred: {ex.Message}");
-                }
-            }
+            
         }
 
-        [Then(@"the user is presented with All Dog breeds information and a success status code")]
-        public void ThenTheUserIsPresentedWithAllDogBreedsInformationAndASuccessStatusCode()
+        [Then(@"the user is presented with All information")]
+        public void ThenTheUserIsPresentedWithAllInformation()
         {
-            //specflowOutputHelper.WriteLine(response[0]);
-            //Assert.AreEqual("success", response[1]);
+            specflowOutputHelper.WriteLine(scenarioContext["content"].ToString());
+            specflowOutputHelper.WriteLine(scenarioContext["status"].ToString());
 
-            Console.WriteLine("Status code");
 
         }
 
-        [When(@"the user makes a GET request to Dog breeds Service ""([^""]*)"" with valid ""([^""]*)"" as parameter")]
-        public async void WhenTheUserMakesAGETRequestToDogBreedsServiceWithValidAsParameter(string p0, string retriever)
+        [When(@"the user makes a GET request to dog breeds with ""([^""]*)"" as parameter")]
+        public void WhenTheUserMakesAGETRequestToDogBreedsWithAsParameter(string breedName)
         {
-            // Create an instance of HttpClient to make the API request
-            using (var httpClient = new HttpClient())
-            {
-                try
-                {
-                    // Specify the endpoint for getting a list of all dog breeds
-                    string endpoint = "/breeds/list/all";
+            String[] response = apiHelper.getRestRequest(config.ApiURL, "");
 
-                    // Combine the base URL and endpoint to form the complete API URL
-                    string requestUrl = $"{config.ApiURL}{endpoint}";
-
-                    // Make the GET request to the API
-                    HttpResponseMessage response = await httpClient.GetAsync(requestUrl);
-
-                    // Check if the request was successful (status code 200)
-                    if (response.IsSuccessStatusCode)
-                    {
-                        // Read the response content as a JSON string
-                        string jsonResponse = await response.Content.ReadAsStringAsync();
-
-                        // Deserialize the JSON response into a C# object
-                        var breedResponse = JsonConvert.DeserializeObject<BreedResponse>(jsonResponse);
-
-                        // Verify if "retriever" is within the list of dog breeds
-                        bool isRetrieverBreed = Array.Exists(breedResponse.Message, breed => breed == "retriever");
-
-                        if (isRetrieverBreed)
-                        {
-                            Console.WriteLine("The 'retriever' breed is in the list of dog breeds.");
-                        }
-                        else
-                        {
-                            Console.WriteLine("The 'retriever' breed is not in the list of dog breeds.");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"API request failed with status code: {response.StatusCode}");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"An error occurred: {ex.Message}");
-                }
-            }
+            scenarioContext["content"] = response[0].Contains(breedName);
+            scenarioContext["status"] = response[1];
         }
+
+        [Then(@"the user is presented with breed information and a success status code")]
+        public void ThenTheUserIsPresentedWithBreedInformationAndASuccessStatusCode()
+        {
+            specflowOutputHelper.WriteLine(scenarioContext["content"].ToString());
+            specflowOutputHelper.WriteLine(scenarioContext["status"].ToString());
+        }
+
+        [When(@"the user makes a GET request to get list of sub-breeds with ""([^""]*)"" as parameter")]
+        public async void WhenTheUserMakesAGETRequestToGetListOfSub_BreedsWithAsParameter(string retriever)
+        {
+            
+            HttpResponseMessage response = await client.GetAsync(config.ApiURL);
+            ScenarioContext.Current["ApiResponse"] = response;
+        }
+
+        [Then(@"the user is presented with list of sub breeds information and a success status code")]
+        public void ThenTheUserIsPresentedWithListOfSubBreedsInformationAndASuccessStatusCode()
+        {
+            specflowOutputHelper.WriteLine(scenarioContext["ApiResponse"].ToString());
+        }
+
+        [When(@"the user makes a GET request to get random image with ""([^""]*)"" as parameter")]
+        public void WhenTheUserMakesAGETRequestToGetRandomImageWithAsParameter(string golden)
+        {
+            //To be completed
+        }
+
+        [Then(@"the user is presented with image and a success status code")]
+        public void ThenTheUserIsPresentedWithImageAndASuccessStatusCode()
+        {
+            //To be completed
+        }
+
+
 
     }
 }

@@ -58,10 +58,25 @@ namespace ABSAAutomation.Web.PageObjects
                 ClickObject(task2WebRepo.rbCompanyBBB, driver);
             }
 
+           
+            // Use SelectElement to work with the dropdown
             var select = new SelectElement(task2WebRepo.txtRole);
 
+            // Get the selected option's text
+            string selectedValue = select.SelectedOption.Text;
 
-            SelectDropDownItem(task2WebRepo.txtRole, driver, "Text", userInformation.role);
+            if (selectedValue.Equals(userInformation.role, StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine(userInformation.role);
+
+                 userInformation.role = selectedValue;
+
+                ///EnterValue(task2WebRepo.txtRole, driver, userInformation.role);
+                //SelectDropDownItem(task2WebRepo.txtRole, driver, "Text", selectedValue);
+
+                WaitForElementToBeDisplayed(task2WebRepo.txtRole, driver, 10);
+             
+            }
 
             EnterValue(task2WebRepo.txtEmail, driver, userInformation.email);
             EnterValue(task2WebRepo.txtMobilePhone, driver, userInformation.cell);

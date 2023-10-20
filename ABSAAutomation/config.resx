@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ApiURL" xml:space="preserve">
-    <value>https://dog.ceo/dog-api</value>
+    <value>https://dog.ceo/api/breeds/list/all</value>
     <comment>https://dog.ceo/dog-api/</comment>
   </data>
   <data name="BrowserName" xml:space="preserve">
