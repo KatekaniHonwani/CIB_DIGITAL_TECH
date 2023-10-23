@@ -2,7 +2,7 @@
 
 A short summary of the feature
 @mytag
-Scenario: Navigation to Way2Automation Application
+Scenario Outline: Navigation to Way2Automation Application
 	Given user has "http://www.way2automation.com/angularjs-protractor/webtables/" to Way2Automation application
 	When User navigate to the application
 	Then user is presented with list of users in the table	

@@ -75,7 +75,8 @@ namespace ABSAAutomation.Web.PageObjects
                 //SelectDropDownItem(task2WebRepo.txtRole, driver, "Text", selectedValue);
 
                 WaitForElementToBeDisplayed(task2WebRepo.txtRole, driver, 10);
-             
+                EnterValue(task2WebRepo.txtRole, driver, userInformation.role);
+
             }
 
             EnterValue(task2WebRepo.txtEmail, driver, userInformation.email);

@@ -99,3 +99,11 @@
 [2023-10-20T07:34:36Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for wss://widget-mediator.zopim.com/s/W/ws/HOKfEnw1yifL5bvy/c/1697787274703.
 [2023-10-20T07:34:47Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for https://v2.zopim.com/?nVHuz6qbGuVvOJgXZkNhXUUsmr9ROfjh.
 [2023-10-20T07:34:48Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for wss://widget-mediator.zopim.com/s/W/ws/X7zMSmNwN9EXTshi/c/1697787288685.
+[2023-10-21T05:55:54Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for https://v2.zopim.com/?nVHuz6qbGuVvOJgXZkNhXUUsmr9ROfjh.
+[2023-10-21T05:55:57Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for wss://widget-mediator.zopim.com/s/W/ws/gdFLGyDTJ492heXq/c/1697867757199.
+[2023-10-21T05:56:18Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for https://v2.zopim.com/?nVHuz6qbGuVvOJgXZkNhXUUsmr9ROfjh.
+[2023-10-21T05:56:20Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for wss://widget-mediator.zopim.com/s/W/ws/1JwtDisPVGREyRAA/c/1697867780533.
+[2023-10-21T05:58:21Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for https://v2.zopim.com/?nVHuz6qbGuVvOJgXZkNhXUUsmr9ROfjh.
+[2023-10-21T05:58:23Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for wss://widget-mediator.zopim.com/s/W/ws/RCFDu5C3TqQas-jA/c/1697867903217.
+[2023-10-21T13:51:03Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for https://v2.zopim.com/?nVHuz6qbGuVvOJgXZkNhXUUsmr9ROfjh.
+[2023-10-21T13:51:05Z] [Warning] https://www.way2automation.com/angularjs-protractor/webtables/ - Tracking Prevention blocked access to storage for wss://widget-mediator.zopim.com/s/W/ws/rXtVD84yTCIlGPyy/c/1697896265103.

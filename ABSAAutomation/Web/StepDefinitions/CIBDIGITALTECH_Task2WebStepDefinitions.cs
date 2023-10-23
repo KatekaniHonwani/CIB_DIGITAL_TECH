@@ -48,13 +48,12 @@ namespace ABSAAutomation.Web.StepDefinitions
             featureContext["tDisplay"] = tableDisplayed;
         }
 
-        [Given(@"the user is on web tables")]
-        public void GivenTheUserIsOnWebTables()
+        [Given(@"User navigate to the application")]
+        public void GivenUserNavigateToTheApplication()
         {
-            // task2Web.VerifyTableWithIsAvailable();
-            task2Web.NavigateToWay2automation(config.URL);
-           //Convert.ToBoolean(featureContext["tDisplay"]).Should().BeTrue();
+            
         }
+
 
         [When(@"the user adds a new user")]
         public void WhenTheUserAddsANewUser(Table table)
